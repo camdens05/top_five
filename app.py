@@ -5,6 +5,7 @@ app = Flask(__name__)
 # Simple in-memory storage for submissions
 submissions = []
 
+# NOTE: This uses in-memory storage, so all submissions are lost when the server restarts
 @app.route("/", methods=["GET", "POST"])
 def home():
     global submissions

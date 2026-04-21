@@ -45,6 +45,8 @@
     </form>
 
     <h2>Submissions</h2>
+    <!-- This adds the submission count for users to see how many entries there are, code writen by AI-->
+    <p>Total submissions: {{ submissions|length }}</p>
     {% if submissions %}
         <table>
             <thead>
